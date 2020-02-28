@@ -8,20 +8,66 @@ const questions = [
         message: "Enter your GitHub username:",
         name: "username"
     },
-
+    {
+        type: "input",
+        message: "What is your project called?",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "Describe your project:",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "List any programs/libraries the user might need to install to use your app:",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message: "Is there anything the user should know before they try your app?",
+        name: "usage"
+    },
+    {
+        type: "input",
+        message: "List any licenses used by your project:",
+        name: "license"
+    },
 ];
 
 
 inquirer.prompt(questions)
 .then(function(answers) {
     const queryUrl = `https://api.github.com/users/${answers.username}`;
+    const badge = "https://img.shields.io/static/v1?label=Created-By&message=Javascript&color=blue"
     
     axios.get(queryUrl)
     .then(function(res) {
         let generateMarkdown = `
-          # ${answers.username}
-          # ${res.data.avatar_url}
-          `;
+            # ${answers.title}
+            # Description:
+            ## ${answers.description}
+            # Table of Contents:
+            ## Installation
+            ## Contributing
+            ## Usage
+            ## License
+            ## Contributing
+            ## Tests
+            # Installation
+            ## ${answers.installation}
+            # Usage
+            ## ${answers.usage}
+            # License
+            ## ${answers.license}
+            # Contributing:
+            ## ${answers.username}
+            # Tests
+            # ${badge}
+            # Questions: 
+            ## ${res.data.avatar_url}
+            ## ${res.data.email}
+            `;
         fs.writeFile("README.md", generateMarkdown, function(err) {
             if (err) {
                 throw err;
