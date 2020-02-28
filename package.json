@@ -1,0 +1,27 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgallagher27/README-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgallagher27/README-generator/issues"
+  },
+  "homepage": "https://github.com/bgallagher27/README-generator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "electron": "^8.0.2",
+    "electron-html-to": "^2.6.0",
+    "inquirer": "^7.0.4",
+    "open": "^7.0.2"
+  }
+}
