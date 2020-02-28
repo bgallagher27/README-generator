@@ -48,25 +48,26 @@ inquirer.prompt(questions)
             # Description:
             ## ${answers.description}
             # Table of Contents:
-            ## Installation
-            ## Contributing
-            ## Usage
-            ## License
-            ## Contributing
-            ## Tests
+            1. [Installation](link)
+            1. [Contributing](link)
+            1. [Usage](link)
+            1. [License](link)
+            1. [Contributing](link)
+            1. [Tests](link)
             # Installation
-            ## ${answers.installation}
+            ${answers.installation}
             # Usage
-            ## ${answers.usage}
+            ${answers.usage}
             # License
-            ## ${answers.license}
+            ${answers.license}
             # Contributing:
-            ## ${answers.username}
+            * ${answers.username}
             # Tests
-            # ${badge}
+            This project has beenrigorously tested for performance and quality!
+            [badge](${badge})
             # Questions: 
-            ## ${res.data.avatar_url}
-            ## ${res.data.email}
+            1. ![Github profile picture](${res.data.avatar_url})
+            1. ${res.data.email}
             `;
         fs.writeFile("README.md", generateMarkdown, function(err) {
             if (err) {
