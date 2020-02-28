@@ -1,11 +1,9 @@
 const api = require("./api.js");
 
-function generateMarkdown(data) {
-    return `
-  # ${data.title}
+let generateMarkdown = `
+  # ${answers.username}
   
   `;
-  }
   
   module.exports = generateMarkdown;
   

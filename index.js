@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const axios = require("axios");
 const fs = require("fs");
+//const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
@@ -10,25 +11,25 @@ const questions = [
 
 ];
 
-inquirer.prompt(questions)
-  .then(function(answers) {
-    const queryUrl = `https://api.github.com/users/${answers.username}`;
 
+inquirer.prompt(questions)
+.then(function(answers) {
+    const queryUrl = `https://api.github.com/users/${answers.username}`;
+    
     axios.get(queryUrl)
-        .then(function(res) {
-        console.log(res);
-      });
+    .then(function(res) {
+        let generateMarkdown = `
+          # ${answers.username}
+          # ${res.data.avatar_url}
+          `;
+        fs.writeFile("README.md", generateMarkdown, function(err) {
+            if (err) {
+                throw err;
+            }
+          });
+        });
     });
 
-
-function writeToFile(fileName, data) {
-}
-
-fs.writeFile("README.md", writeToFile, function(err) {
-    if (err) {
-      throw err;
-    }
-});
 
 function init() {
 
