@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const axios = require("axios");
 const fs = require("fs");
 //const generateMarkdown = require("./utils/generateMarkdown");
+const newFile = [];
 const questions = [
     {
         type: "input",
@@ -46,7 +47,7 @@ inquirer.prompt(questions)
         let generateMarkdown = `
             # ${answers.title}
             # Description:
-            ## ${answers.description}
+            ${answers.description}
             # Table of Contents:
             1. [Installation](link)
             1. [Contributing](link)
