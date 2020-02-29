@@ -25,6 +25,6 @@ This project has beenrigorously tested for performance and quality!
 ![badge](https://img.shields.io/static/v1?label=Created-By&message=Javascript&color=blue)
 
 # Questions: 
-    1. ![Github profile picture](https://avatars3.githubusercontent.com/u/58610224?v=4)
-    1. null
+* ![Github profile picture](https://avatars3.githubusercontent.com/u/58610224?v=4)
+* null
             

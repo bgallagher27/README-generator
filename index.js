@@ -64,10 +64,10 @@ inquirer.prompt(questions)
             * ${answers.username}
             # Tests
             This project has beenrigorously tested for performance and quality!
-            [badge](${badge})
+            ![badge](${badge})
             # Questions: 
-            1. ![Github profile picture](${res.data.avatar_url})
-            1. ${res.data.email}
+            * ![Github profile picture](${res.data.avatar_url})
+            * ${res.data.email}
             `;
         fs.writeFile("README.md", generateMarkdown, function(err) {
             if (err) {
