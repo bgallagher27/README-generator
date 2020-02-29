@@ -3,7 +3,6 @@
 The README generator takes user input that defines a given project and provides a populated README for that particular project. Give it a try!
 # Table of Contents:
 1. [Installation](link)
-1. [Contributing](link)
 1. [Usage](link)
 1. [License](link)
 1. [Contributing](link)
@@ -13,7 +12,7 @@ The README generator takes user input that defines a given project and provides 
 axios, inquirer, fs
 
 # Usage
-    Make sure to run a quick NPM install before running the generator to ensure all of the necessary programs are available.
+Make sure to run a quick NPM install before running the generator to ensure all of the necessary programs are available.
 # License
     N/A
             
@@ -23,7 +22,7 @@ axios, inquirer, fs
 # Tests
 This project has beenrigorously tested for performance and quality!
 
-[badge](https://img.shields.io/static/v1?label=Created-By&message=Javascript&color=blue)
+![badge](https://img.shields.io/static/v1?label=Created-By&message=Javascript&color=blue)
 
 # Questions: 
     1. ![Github profile picture](https://avatars3.githubusercontent.com/u/58610224?v=4)

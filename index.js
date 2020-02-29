@@ -50,7 +50,6 @@ inquirer.prompt(questions)
             ${answers.description}
             # Table of Contents:
             1. [Installation](link)
-            1. [Contributing](link)
             1. [Usage](link)
             1. [License](link)
             1. [Contributing](link)
