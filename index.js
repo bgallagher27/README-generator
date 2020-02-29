@@ -35,7 +35,7 @@ const questions = [
     },
 ];
 
-
+    
 inquirer.prompt(questions)
 .then(function(answers) {
     const queryUrl = `https://api.github.com/users/${answers.username}`;
@@ -76,10 +76,3 @@ inquirer.prompt(questions)
           });
         });
     });
-
-
-function init() {
-
-}
-
-init();
