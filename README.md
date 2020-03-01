@@ -1,8 +1,8 @@
 ![badge](https://img.shields.io/static/v1?label=Created-By&message=Javascript&color=blue)
-# dfgdfg
+# README Generator
 
 # Description:
-fgdfg
+This application takes in user answers to provided questions and creates an active README file based on the information in the user responses
 
 # Table of Contents:
 1. [Installation](link)
@@ -12,13 +12,13 @@ fgdfg
 1. [Tests](link)
 
 # Installation
-dsfgsfdg
+Axios, Inquirer, FS
 
 # Usage
-sfdgsdg
+Make sure to run 'NPM install' in the command line before running the application to ensure all applicable packages are available!
 
 # License
-fdsgsdg
+none
 
 # Contributing:
 * bgallagher27
